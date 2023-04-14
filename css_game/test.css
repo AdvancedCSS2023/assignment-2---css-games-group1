@@ -180,9 +180,6 @@ input:checked
 .resetButton {
   background-color: white;
   color: lightgreen;
-  } 
-  
-  main {
   border-radius: 5px;
   font-size: 2rem;
   margin: 0 auto;
