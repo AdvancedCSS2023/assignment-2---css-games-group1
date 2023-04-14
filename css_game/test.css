@@ -1,16 +1,31 @@
+:root{
+    /* animation height variables */
+    --bottom1-animation: 65vh;
+    --bottom2-animation: 60vh;
+    --middle-height-animation: 30vh;
+    --top1-animation-high: 2vh;
+    --top2-animation-medium: 10vh;
+
+    /* Color variables */
+    --header-background: #537d90;
+    --sky-background: lightblue;
+    --welcome-victory-page: lightgreen;
+    --text-color: white;
+}
+
 /* Gives the user a crossair */
 * {
   cursor: crosshair;
 }
 /* Styling the boddy */
 body {
-  color: white;
+  color: var(--text-color);
   text-align: center;
   margin: 0;
   font-family: sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  background-color: lightblue;
+  background-color: var(--sky-background);
   counter-reset: hits 0;
   overflow: hidden;
   counter-reset: checked;
@@ -18,7 +33,7 @@ body {
 
 /* Styles the upper grey bar (header) */
 header {
-  background-color: #537d90;
+  background-color: var(--header-background);
   padding: 1.5rem;
 }
 
@@ -39,7 +54,7 @@ input {
     font-size: 5rem;
     appearance: none;
     cursor: cell;
-    transform: translateY(65vh);
+    transform: translateY(var(--bottom1-animation));
 }
 
 input:before {
@@ -66,37 +81,37 @@ input:checked {
 /* Animations */
 @keyframes jump {
     0% {
-        transform: translateY(65vh);
+        transform: translateY(var(--bottom1-animation));
     }
     10% {
-        transform: translateY(2vh);
+        transform: translateY(var(--top1-animation-high));
     }
     20% {
-        transform: translateY(65vh);
+        transform: translateY(var(--bottom1-animation));
     }
     30% {
-        transform: translateY(60vh);
+        transform: translateY(var(--bottom2-animation));
     }
     40% {
-        transform: translateY(65vh);
+        transform: translateY(var(--bottom1-animation));
     }
     50% {
-        transform: translateY(10vh);
+        transform: translateY(var(--top2-animation-medium));
     }
     60% {
-        transform: translateY(65vh);
+        transform: translateY(var(--bottom1-animation));
     }
     70% {
-        transform: translateY(30vh);
+        transform: translateY(var(--middle-height-animation));
     }
     80% {
-        transform: translateY(65vh);
+        transform: translateY(var(--bottom1-animation));
     }
     90% {
-        transform: translateY(60vh);
+        transform: translateY(var(--bottom2-animation));
     }
     100% {
-        transform: translateY(65vh);
+        transform: translateY(var(--bottom1-animation));
     }
 }
 
@@ -150,7 +165,7 @@ input:checked
   top: 100vh;
   width: 100vw;
   height: 100vh;
-  background: lightgreen;
+  background: var(--welcome-victory-page);
   font-size: 5rem;
   align-items: center;
   justify-content: center;
@@ -158,8 +173,8 @@ input:checked
 
 /* Reset button on the victory page */
 #resetButton {
-  background-color: white;
-  color: lightgreen;
+  background-color: var(--text-color);
+  color: var(--welcome-victory-page);
   border-radius: 5px;
   font-size: 2rem;
   margin: 0 auto;
@@ -180,7 +195,7 @@ input:checked
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    background: lightgreen;
+    background: var(--welcome-victory-page);
     font-size: 5rem;
     align-items: center;
     justify-content: center;
