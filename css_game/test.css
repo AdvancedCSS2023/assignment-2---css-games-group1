@@ -1,0 +1,193 @@
+/* Gives the user a crossair */
+* {
+  cursor: crosshair;
+}
+/* Styling the boddy */
+body {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: lightblue;
+  counter-reset: hits 0;
+  overflow: hidden;
+  counter-reset: checked;
+}
+
+/* Styles the upper grey bar (header) */
+header {
+  background-color: #537d90;
+  padding: 1.5rem;
+}
+
+
+/* Places the grass where it is supposed to be */
+img {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Styles the targets */
+input {
+    height: 5rem;
+    width: 5rem;
+    font-size: 5rem;
+    appearance: none;
+    cursor: cell;
+    transform: translateY(65vh);
+}
+
+input:before {
+    content: "🎯";
+}
+
+input:checked:before {
+    content: "💯";
+}
+
+input:checked {
+    pointer-events: none;
+}
+
+/* Hit counter */
+input:checked {
+    counter-increment: checked;
+}
+
+.count:after {
+    content: counter(checked);
+}
+
+/* Animations */
+@keyframes jump {
+    0% {
+        transform: translateY(65vh);
+    }
+    10% {
+        transform: translateY(2vh);
+    }
+    20% {
+        transform: translateY(65vh);
+    }
+    30% {
+        transform: translateY(60vh);
+    }
+    40% {
+        transform: translateY(65vh);
+    }
+    50% {
+        transform: translateY(10vh);
+    }
+    60% {
+        transform: translateY(65vh);
+    }
+    70% {
+        transform: translateY(30vh);
+    }
+    80% {
+        transform: translateY(65vh);
+    }
+    90% {
+        transform: translateY(60vh);
+    }
+    100% {
+        transform: translateY(65vh);
+    }
+}
+
+@keyframes welcomeScreen{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+
+input {
+    animation: jump 10s infinite linear alternate;
+}
+
+input:nth-of-type(even) {
+    animation-direction: alternate-reverse;
+}
+
+input:nth-last-of-type(3n + 1) {
+    animation-delay: 1s;
+}
+
+input:nth-last-of-type(3n + 2) {
+    animation-delay: 3.7s;
+}
+
+input:checked {
+    animation-play-state: paused;
+}
+
+/* displays the victorscreen if all boxes are checked */
+input:checked
++ input:checked
++ input:checked
++ input:checked
++ input:checked
++ input:checked
++ input:checked
++ input:checked
++ input:checked
+~ #victory {
+    top: 0;
+    transition: 200ms;
+}
+
+/* This styles the victory page */
+#victory {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background: lightgreen;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reset button on the victory page */
+#resetButton {
+  background-color: white;
+  color: lightgreen;
+  border-radius: 5px;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#resetButton:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+
+/* This styles the victory page */
+#welcome {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background: lightgreen;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: welcomeScreen;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
