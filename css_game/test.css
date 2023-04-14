@@ -154,7 +154,7 @@ input:checked
 + input:checked
 + input:checked
 + input:checked
-~ #victory {
+~ .victory {
     top: 0;
     transition: 200ms;
 }
