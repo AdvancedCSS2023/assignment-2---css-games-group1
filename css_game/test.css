@@ -160,7 +160,7 @@ input:checked
 }
 
 /* This styles the victory page */
-#victory {
+.victory {
   position: absolute;
   top: 100vh;
   width: 100vw;
@@ -172,9 +172,17 @@ input:checked
 }
 
 /* Reset button on the victory page */
-#resetButton {
+/*Adding-Variables*/
+.resetButton {
   background-color: var(--text-color);
   color: var(--welcome-victory-page);
+  }
+.resetButton {
+  background-color: white;
+  color: lightgreen;
+  } 
+  
+  main {
   border-radius: 5px;
   font-size: 2rem;
   margin: 0 auto;
@@ -182,14 +190,14 @@ input:checked
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-#resetButton:hover {
+.resetButton:hover {
   opacity: 70%;
   cursor: pointer;
 }
 
 
 /* This styles the victory page */
-#welcome {
+.welcome {
     position: absolute;
     top: 0;
     z-index: 2;
