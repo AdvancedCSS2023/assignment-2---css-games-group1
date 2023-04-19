@@ -1,7 +1,7 @@
 
-#Read me
+# Read me
 
-# What the project does
+## What the project does
 
 This project symbolizes the beginning of our relationship with github as a platform to code and get work done.The project is supposed to help us get started with github as well as learn how to use it and code more efficiently. For our first github project we’ve created a CSS game.
 What the game does:
