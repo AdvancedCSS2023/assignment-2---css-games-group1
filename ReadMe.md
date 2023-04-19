@@ -18,7 +18,7 @@ What the game does:
 
 
 ## Why the project is useful
-The game is created to have a minute break from daily work. User have to focus and concentrate to hit the targets and when that is done, user goes back to what he was doing before the game.
+The game is designed to have a minute break from daily work. User have to focus and concentrate to hit the targets and when that is done, user goes back to what he was doing before the game.
 
 The game is also a good example on how to make a super simple but functional game using nothing but HTML and to reset the game is created with JavaScript. The elements in the game are also something that can be used to make a variety of other games if you just have a little creativity. So not only can the game be a break from daily tasks, but it is also something that can be used as inspiration and a foundation for others to try and make a simple game themselves without too much coding knowledge.
 
