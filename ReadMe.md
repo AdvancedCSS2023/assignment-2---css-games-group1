@@ -44,3 +44,4 @@ With github, anyone can contribute to a project. Projects can be maintained and 
 ## Comments:
 BEM: We didn´t use BEM in this project, because we didn´t have containers inside each others or childs. With the scrollytelling task in the next assignment, the BEM will be used. 
 SASS or CSS Variables: CSS variables were used to have control on our colors and height for the targets to go up in the viewport. 
+We used Google chrome, and got the result we wanted. We haven´t learned how to make it compatible with multiple browsers, therefor we haven´t prioritized this function.
