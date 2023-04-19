@@ -58,11 +58,11 @@ input {
 }
 
 input:before {
-    content: "ðŸŽ¯";
+    content: "🎯";
 }
 
 input:checked:before {
-    content: "ðŸ’¯";
+    content: "💯";
 }
 
 input:checked {
