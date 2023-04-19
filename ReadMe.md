@@ -35,7 +35,7 @@ The game we’ve created is a basic game only requiring css. With the technology
 ## Which technology is used
 We firstly created the whole game, and then we created a github classroom to final tune and fix the game where it needed fixing, and to finish elements that were not done yet. For us this was the most effective and best way to work, as we could do the main coding while in the same room, and then we could do the smaller changes, and fixes through github when we are not together. 
 
-The game is created only using HTML and CSS inside vscode. The only bit of JavaScript is the function that refreshes the website. 
+The game is created only using HTML and CSS inside vscode. we were not allowed to use alot of js, this why The only bit of JavaScript is the function that refreshes the website. 
 
 Github uses “Git” as an open source projects type technology allowing everyone to create and contribute to projects. In github you can use Javascript, HTML, CSS and many more.
 Who maintains and contributes to the project
