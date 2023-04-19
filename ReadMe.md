@@ -12,7 +12,7 @@ What the game does:
 
 3. the user can click the targets (checkboxes). This will make them freeze in their current position, and they will change emoji so the user can easily see    what targets are hit. 
 
-4 when a target is hit, a counter at the top of the screen will increment, so the user knows how many targets are left to shoot.
+4. when a target is hit, a counter at the top of the screen will increment, so the user knows how many targets are left to shoot.
 
 5. when all targets are hit, a css selector will become active, and display a victory page to the user. On this page there will be a button you can press      to play again. This button refreshes the page, and the game resets.
 
